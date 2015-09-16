@@ -6,7 +6,7 @@ global pathbhps C:\Users\tew207\Desktop\PhD_Data\BHPS\Data
 
 //bhps_ukhls *doby* *sex* *hwght* using indresp, bhpswaves(1/18) ukhlswaves(1/4) bhpsdir($pathbhps) ukhlsdir($pathukhls)
 
-bhps_ukhls *doby* *fihhyr* *hgr2r* *sex* *hwght* using indresp, bhpswaves(1/18) bhpsdir($pathbhps)
+bhps_ukhls *doby* *fihhyr* *hgr2r* *sex* *hwght* *feend *scend using indresp, bhpswaves(1/18) bhpsdir($pathbhps)
 
 gen year = wave + 1991
 gen age = year - doby
